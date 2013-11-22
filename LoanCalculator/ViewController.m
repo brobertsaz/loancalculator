@@ -18,6 +18,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.amountFinanced.delegate = self;
+    self.interestRate.delegate = self;
+    self.loanLength.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning
@@ -26,4 +29,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)calculatePayment:(id)sender {
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    return [textField resignFirstResponder];
+}
 @end
