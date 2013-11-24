@@ -199,6 +199,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Bob Roberts";
 				TargetAttributes = {
+					C4EDAA6B183F18A500FB6AD8 = {
+						DevelopmentTeam = 78UQ24KURV;
+					};
 					C4EDAA8C183F18A500FB6AD8 = {
 						TestTargetID = C4EDAA6B183F18A500FB6AD8;
 					};
@@ -378,10 +381,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LoanCalculator/LoanCalculator-Prefix.pch";
 				INFOPLIST_FILE = "LoanCalculator/LoanCalculator-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -391,10 +397,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LoanCalculator/LoanCalculator-Prefix.pch";
 				INFOPLIST_FILE = "LoanCalculator/LoanCalculator-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -460,6 +469,7 @@
 				C4EDAAA0183F18A500FB6AD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C4EDAAA1183F18A500FB6AD8 /* Build configuration list for PBXNativeTarget "LoanCalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +478,7 @@
 				C4EDAAA3183F18A500FB6AD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

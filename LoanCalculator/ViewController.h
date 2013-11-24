@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+float amountFinanced;
+float interestRate;
+int loanLength;
+
+
 @interface ViewController : UIViewController <UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *amountFinanced;
 @property (weak, nonatomic) IBOutlet UITextField *interestRate;
@@ -18,4 +23,5 @@
 @property (weak, nonatomic) IBOutlet UILabel *totalPayment;
 
 - (IBAction)calculatePayment:(id)sender;
+
 @end
